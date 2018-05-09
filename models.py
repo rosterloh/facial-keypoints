@@ -29,8 +29,8 @@ class Net(nn.Module):
         self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
 
         self.fcl1 = nn.Linear(6400, 1000)
-        self.fcl2 = nn.Linear(1000, 1000)
-        self.fcl3 = nn.Linear(1000, 136)
+        self.fcl2 = nn.Linear(1000, 500)
+        self.fcl3 = nn.Linear(500, 136)
 
         self.dropout1 = nn.Dropout(p=0.1)
         self.dropout2 = nn.Dropout(p=0.2)
